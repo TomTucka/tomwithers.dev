@@ -1,47 +1,46 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import ExtLink from './ext-link'
 import { useRouter } from 'next/router'
 import styles from '../styles/header.module.css'
 
 const navItems: { label: string; page?: string; link?: string }[] = [
   { label: 'Home', page: '/' },
-  { label: 'Blog', page: '/blog' },
-  { label: 'Contact', page: '/contact' },
-  { label: 'Source Code', link: 'https://github.com/ijjk/notion-blog' },
+  { label: 'Posts', page: '/blog' },
+  { label: 'About', page: '/about' },
 ]
 
-const ogImageUrl = 'https://notion-blog.now.sh/og-image.png'
+const isActive = (page, pathname) => {
+  return pathname === page || (page === '/posts' && pathname.startsWith(page))
+}
 
-export default ({ titlePre = '' }) => {
-  const { pathname } = useRouter()
+const ogImageUrl = ''
+const defaultDescription =
+  "Tom Withers' Blog about automation, infrastructure & software development"
 
+export default ({ titlePre = '', description = '' }) => {
+  const { asPath } = useRouter()
+
+  const title = [titlePre, 'Tom Withers'].filter(s => s.length > 0).join(' | ')
+  const desc = description === '' ? defaultDescription : description
   return (
     <header className={styles.header}>
       <Head>
-        <title>{titlePre ? `${titlePre} |` : ''} My Notion Blog</title>
-        <meta
-          name="description"
-          content="An example Next.js site using Notion for the blog"
-        />
-        <meta name="og:title" content="My Notion Blog" />
+        <title>{title}</title>
+        <meta name="description" content={desc} />
+        <meta name="og:title" content={title} />
         <meta property="og:image" content={ogImageUrl} />
-        <meta name="twitter:site" content="@_ijjk" />
+        <meta name="twitter:site" content="@tomtucka" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={ogImageUrl} />
       </Head>
       <ul>
-        {navItems.map(({ label, page, link }) => (
+        {navItems.map(({ label, page }) => (
           <li key={label}>
-            {page ? (
-              <Link href={page}>
-                <a className={pathname === page ? 'active' : undefined}>
-                  {label}
-                </a>
-              </Link>
-            ) : (
-              <ExtLink href={link}>{label}</ExtLink>
-            )}
+            <Link href={page}>
+              <a className={isActive(page, asPath) ? 'active' : undefined}>
+                {label}
+              </a>
+            </Link>
           </li>
         ))}
       </ul>
