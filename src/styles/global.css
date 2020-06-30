@@ -4,11 +4,11 @@
   --gap: 1rem;
   --gap-double: 2rem;
 
-  --bg: #fff;
-  --fg: #000;
-  --accents-1: #111;
+  --bg: #2f3640;
+  --fg: #fff;
+  --accents-1: #fff;
   --accents-2: #333;
-  --accents-3: #888;
+  --accents-3: #fff;
   --geist-foreground: #000;
 
   --radius: 8px;
@@ -351,10 +351,6 @@ code {
     font-size: 0.95rem;
     letter-spacing: 0;
   }
-}
-
-.dotted {
-  border-bottom: 1px dashed black;
 }
 
 footer {
