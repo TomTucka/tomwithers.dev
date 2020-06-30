@@ -40,12 +40,12 @@ export default () => (
         className={sharedStyles.avatar}
         src="/avatar.png"
         width="200"
-        alt="Toms' Photo"
+        alt="Toms Photo"
       />
       <h1>Hi, I'm Tom!</h1>
       <h2>
-        I'm a british 🇬🇧 <i>cloud infrastructure engineer</i> working for the
-        british government.
+        I'm a british 🇬🇧 <i>cloud infrastructure engineer</i> working for the UK
+        Government.
       </h2>
 
       <br />
