@@ -1,9 +1,13 @@
-import Link from 'next/link'
 import Header from '../components/header'
 import ExtLink from '../components/ext-link'
-import Features from '../components/features'
-import GitHub from '../components/svgs/github'
+
 import sharedStyles from '../styles/shared.module.css'
+import contactStyles from '../styles/contact.module.css'
+
+import GitHub from '../components/svgs/github'
+import Twitter from '../components/svgs/twitter'
+import Envelope from '../components/svgs/envelope'
+import LinkedIn from '../components/svgs/linkedin'
 
 const contacts = [
   {
@@ -44,7 +48,9 @@ export default () => (
         british government.
       </h2>
 
-      {/* <div className={contacts}>
+      <br />
+
+      <div className={contactStyles.links}>
         {contacts.map(({ Comp, link, alt }) => {
           return (
             <ExtLink key={link} href={link} aria-label={alt}>
@@ -52,7 +58,7 @@ export default () => (
             </ExtLink>
           )
         })}
-      </div> */}
+      </div>
     </div>
   </>
 )
