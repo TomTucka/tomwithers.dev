@@ -44,7 +44,7 @@ export default () => (
       />
       <h1>Hi, I'm Tom!</h1>
       <h2>
-        I'm a british 🇬🇧 <i>cloud infrastructure engineer</i> working for the UK
+        I'm a British 🇬🇧 <i>cloud infrastructure engineer</i> working for the UK
         Government.
       </h2>
 
