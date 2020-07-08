@@ -43,7 +43,7 @@ export default ({ posts = [] }) => {
           return (
             <div className={blogStyles.postPreview} key={post.Slug}>
               <h3>
-                <Link href="/posts/[slug]" as={getBlogLink(post.Slug)}>
+                <Link href="/blog/[slug]" as={getBlogLink(post.Slug)}>
                   <a>{post.Page}</a>
                 </Link>
               </h3>
