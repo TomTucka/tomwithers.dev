@@ -6,6 +6,10 @@
   margin-bottom: 50px;
 }
 
+.blogIndex h3 {
+  color: #fff;
+}
+
 .previewAlertContainer {
   display: flex;
   justify-content: center;
@@ -36,6 +40,7 @@
   border-radius: 5px;
   transition: all 0.2s ease 0s;
 }
+
 .escapePreview:hover {
   background-color: white;
   color: black;
@@ -48,6 +53,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .draftBadge {
   border-radius: 16px;
   background-color: black;
@@ -72,8 +78,7 @@
   border-bottom: none;
 }
 
-.postPreview h3,
-.post h1 {
+.postPreview h3, .post h1 {
   margin-bottom: 0;
 }
 
@@ -81,14 +86,11 @@
   margin-top: 0;
 }
 
-.post :global(h2),
-.post :global(h3) {
+.post :global(h2), .post :global(h3) {
   margin: 3rem 0 1.5rem 0;
 }
 
-.post :global(video),
-.post :global(img),
-.post :global(.asset-wrapper) {
+.post :global(video), .post :global(img), .post :global(.asset-wrapper) {
   margin: 2rem auto;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
   max-width: 100%;

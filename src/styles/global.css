@@ -3,29 +3,22 @@
   --gap-half: 0.5rem;
   --gap: 1rem;
   --gap-double: 2rem;
-
-  --bg: #2f3640;
+  --bg: #061F2F;
   --fg: #fff;
   --accents-1: #fff;
-  --accents-2: #333;
+  --accents-2: #101C29;
   --accents-3: #fff;
-  --geist-foreground: #000;
-
+  --geist-foreground: #0F161E;
   --radius: 8px;
-
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  --font-mono: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-mono: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   padding: 0;
   margin: 0;
   font-size: 20px;
@@ -35,15 +28,12 @@ body {
   min-height: 100vh;
   background: var(--bg);
   color: var(--fg);
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   /* Hack */
   overflow-x: hidden;
 }
 
-code[class*='language-'],
-pre[class*='language-'] {
+code[class*='language-'], pre[class*='language-'] {
   color: #000;
   text-align: left;
   white-space: pre;
@@ -54,133 +44,136 @@ pre[class*='language-'] {
   tab-size: 4;
   hyphens: none;
 }
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
+
+.token.comment, .token.prolog, .token.doctype, .token.cdata {
   color: #999;
 }
+
 .token.namespace {
   opacity: 0.7;
 }
-.token.string,
-.token.attr-value {
+
+.token.string, .token.attr-value {
   color: #028265;
 }
-.token.punctuation,
-.token.operator {
+
+.token.punctuation, .token.operator {
   color: #000;
 }
-.token.url,
-.token.symbol,
-.token.boolean,
-.token.variable,
-.token.constant {
+
+.token.url, .token.symbol, .token.boolean, .token.variable, .token.constant {
   color: #36acaa;
 }
-.token.atrule,
-.language-autohotkey .token.selector,
-.language-json .token.boolean,
-code[class*='language-css'] {
+
+.token.atrule, .language-autohotkey .token.selector, .language-json .token.boolean, code[class*='language-css'] {
   font-weight: 600;
 }
+
 .language-json .token.boolean {
   color: var(--geist-success);
 }
+
 .token.keyword {
   color: #ff0078;
   font-weight: bolder;
 }
-.token.function,
-.token.tag,
-.token.class-name,
-.token.number,
-.token.tag .token.punctuation {
+
+.token.function, .token.tag, .token.class-name, .token.number, .token.tag .token.punctuation {
   color: var(--geist-success);
 }
+
 .language-autohotkey .token.tag {
   color: #9a050f;
 }
-.token.selector,
-.language-autohotkey .token.keyword {
+
+.token.selector, .language-autohotkey .token.keyword {
   color: #00009f;
 }
-.token.important,
-.token.bold {
+
+.token.important, .token.bold {
   font-weight: bold;
 }
+
 .token.italic {
   font-style: italic;
 }
+
 .token.deleted {
   color: red;
   font-weight: bolder;
 }
+
 .token.inserted {
   color: var(--geist-success);
   font-weight: bolder;
 }
-.language-json .token.property,
-.language-markdown .token.title {
+
+.language-json .token.property, .language-markdown .token.title {
   color: #000;
   font-weight: bolder;
 }
+
 .language-markdown .token.code {
   color: var(--geist-success);
   font-weight: normal;
 }
-.language-markdown .token.list,
-.language-markdown .token.hr {
+
+.language-markdown .token.list, .language-markdown .token.hr {
   color: #999;
 }
+
 .language-markdown .token.url {
   color: #ff0078;
   font-weight: bolder;
 }
+
 .token.selector {
   color: #2b91af;
 }
-.token.property,
-.token.entity {
+
+.token.property, .token.entity {
   color: #f00;
 }
-.token.attr-name,
-.token.regex {
+
+.token.attr-name, .token.regex {
   color: #d9931e;
 }
+
 .token.directive.tag .tag {
   background: #ff0;
   color: #393a34;
 }
+
 /* dark */
+
 pre.dark[class*='language-'] {
   color: #fafbfc;
 }
+
 .language-json .dark .token.boolean {
   color: var(--geist-success);
 }
+
 .dark .token.string {
   color: #50e3c2;
 }
-.dark .token.function,
-.dark .token.tag,
-.dark .token.class-name,
-.dark .token.number {
+
+.dark .token.function, .dark .token.tag, .dark .token.class-name, .dark .token.number {
   color: #2ba8ff;
 }
-.dark .token.attr-value,
-.dark .token.punctuation,
-.dark .token.operator {
+
+.dark .token.attr-value, .dark .token.punctuation, .dark .token.operator {
   color: #efefef;
 }
-.dark .token.attr-name,
-.dark .token.regex {
+
+.dark .token.attr-name, .dark .token.regex {
   color: #fac863;
 }
-.language-json .dark .token.property,
-.language-markdown .dark .token.title {
+
+.language-json .dark .token.property, .language-markdown .dark .token.title {
   color: #fff;
 }
+
 .language-markdown .dark .token.code {
   color: #50e3c2;
 }
@@ -220,7 +213,6 @@ pre.dark[class*='language-'] {
     flex-basis: auto;
     padding-left: 0;
   }
-
   .feature h4 {
     font-size: 0.75rem;
   }
@@ -234,6 +226,7 @@ pre.dark[class*='language-'] {
   background: var(--bg);
   margin: var(--gap-half) auto;
 }
+
 figure {
   font-size: 0.85rem;
   color: #999;
@@ -249,6 +242,7 @@ a {
   color: #0070f3;
   text-decoration: none;
 }
+
 a:hover {
   color: #3291ff;
 }
@@ -293,6 +287,7 @@ h2 {
   text-align: center;
   cursor: pointer;
 }
+
 .video :global(video) {
   max-width: 100%;
   max-height: 90vh;
@@ -305,9 +300,11 @@ p {
   font-size: 0.94rem;
   line-height: 1.7;
 }
+
 pre {
   white-space: pre;
 }
+
 pre :global(code) {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -340,7 +337,6 @@ code {
   .explanation {
     padding: 0 1rem 4rem;
   }
-
   h2 {
     font-size: 0.95rem;
     letter-spacing: 0;
