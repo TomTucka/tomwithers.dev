@@ -1,0 +1,67 @@
+baseurl = "https://tomwithers.dev/"
+languageCode = "en-us"
+title = "Tom Withers"
+theme = "codex"
+copyright = "Tom Withers - 2016 - {year}"
+
+disableAliases = true
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    style = "dracula"
+    noClasses = true
+    tabWidth = 2
+
+[related]
+	threshold = 80
+	includeNewer = true
+	toLower = true
+
+	[[related.indices]]
+		name = "keywords"
+		weight = 10
+
+[permalinks]
+	post = "/posts/:slug"
+
+[privacy]
+	[privacy.googleAnalytics]
+		anonymizeIP = true
+		respectDoNotTrack = true
+		useSessionStorage = true
+	[privacy.twitter]
+		enableDNT = true
+	[privacy.youtube]
+		privacyEnhanced = true
+
+[params]
+	author = "Tom Withers"
+	description = "Thoughts, rants and discoveries."
+	keywords = "software development, software, golang, devops, go, terraform"
+	avatar = "avatar.jpg"
+	twitter = "https://twitter.com/tomtucka"
+	github = "https://github.com/tomtucka"
+	sponsors = "https://github.com/sponsors/tomtucka"
+	linkedin = "https://www.linkedin.com/in/tomtucka/"
+
+[menu]
+	[[menu.main]]
+		identifier = "home"
+		name = "Home"
+		url = "/"
+		weight = 10
+	[[menu.main]]
+		identifier = "posts"
+		name = "Posts"
+		url = "/posts/"
+		weight = 20
+	[[menu.main]]
+		identifier = "about"
+		name = "About"
+		url = "/about/"
+		weight = 40
+
+[outputs]
+home = [ "HTML", "RSS" ]
