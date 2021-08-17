@@ -66,29 +66,29 @@ func main() {
 				k,
 				progressFn,
 				func(page *notion.Page) string {
-					return toString(page.Root().Prop("properties.S6_\""))
+					return toString(page.Root().Prop("properties.g&QZ"))
 				},
 				func(page *notion.Page) string {
-					slug := toString(page.Root().Prop("properties.S6_\""))
+					slug := toString(page.Root().Prop("properties.g&QZ"))
 					return fmt.Sprintf("content/posts/%s.md", strings.ReplaceAll(slug, "/", ""))
 				},
 				func(page *notion.Page) string {
-					slug := toString(page.Root().Prop("properties.S6_\""))
-					date := toDateString(page.Root().Prop("properties.a`af"))
-					draft := !toBool(page.Root().Prop("properties.la`A"))
-					city := toString(page.Root().Prop("properties.%]Hm"))
-					tags := toList(page.Root().Prop("properties.h|dn"))
+					slug := toString(page.Root().Prop("properties.g&QZ"))
+					date := toDateString(page.Root().Prop("properties.;u]v"))
+					draft := !toBool(page.Root().Prop("properties.*<QN"))
+					city := toString(page.Root().Prop("properties.H#GQ"))
+					tags := toList(page.Root().Prop("properties.|fdy"))
 					title := page.Root().Title
 					return blogHeader(title, date, draft, slug, city, tags)
 				},
 				func(page *notion.Page) bool {
-					return !toBool(page.Root().Prop("properties.la`A"))
+					return !toBool(page.Root().Prop("properties.*<QN"))
 				},
 				func(page *notion.Page) error {
-					if toString(page.Root().Prop("properties.S6_\"")) == "" {
+					if toString(page.Root().Prop("properties.g&QZ")) == "" {
 						return errors.New("missing slug")
 					}
-					if toDateString(page.Root().Prop("properties.a`af")) == "" {
+					if toDateString(page.Root().Prop("properties.;u]v")) == "" {
 						return errors.New("missing date")
 					}
 					if page.Root().Title == "" {
