@@ -8,6 +8,8 @@ toc: true
 tags: []
 ---
 
+This is a test blog post, pulled from notion.
+
 ```javascript
 resource "circleci_project" "example" {
     name     = "MyCircleProject"
@@ -15,4 +17,5 @@ resource "circleci_project" "example" {
       SOME_VARIABLE = "MyVariableValue"
     }
 }
+
 ```
