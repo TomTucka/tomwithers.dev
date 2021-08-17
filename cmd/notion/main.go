@@ -120,10 +120,10 @@ func main() {
 				k,
 				progressFn,
 				func(page *notion.Page) string {
-					return toString(page.Root().Prop("properties.7F2|"))
+					return toString(page.Root().Prop("properties.g&QZ"))
 				},
 				func(page *notion.Page) string {
-					slug := toString(page.Root().Prop("properties.7F2|"))
+					slug := toString(page.Root().Prop("properties.g&QZ"))
 					return fmt.Sprintf("content/%s.md", strings.ReplaceAll(slug, "/", ""))
 				},
 				func(page *notion.Page) string {
@@ -133,7 +133,7 @@ func main() {
 					return false
 				},
 				func(page *notion.Page) error {
-					if toString(page.Root().Prop("properties.7F2|")) == "" {
+					if toString(page.Root().Prop("properties.g&QZ")) == "" {
 						return errors.New("missing slug")
 					}
 					if page.Root().Title == "" {
