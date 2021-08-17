@@ -77,7 +77,7 @@ func main() {
 					date := toDateString(page.Root().Prop("properties.;u]v"))
 					draft := !toBool(page.Root().Prop("properties.*<QN"))
 					city := toString(page.Root().Prop("properties.H#GQ"))
-					tags := toList(page.Root().Prop("properties.|fdy"))
+					tags := toList(page.Root().Prop("properties.|fdY"))
 					title := page.Root().Title
 					return blogHeader(title, date, draft, slug, city, tags)
 				},
