@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+{{ range $paginator.Pages }}
+<article class="article border-b border-gray-400">
+  <h1><a href="{{.Permalink}}" class="no-underline">{{ .Title }}</a></h1>
+
+  {{ .Summary }}
+</article>
+{{ end }}
+
+{{ if gt $paginator.TotalPages 1 }}
+{{ template "_internal/pagination.html" . }}
+{{ end }}
+{{ end }}

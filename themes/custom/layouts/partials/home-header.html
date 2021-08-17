@@ -1,0 +1,32 @@
+<header id="header" class="header flex w-full m-0 bg-cover bg-top-center bg-black">
+  <div class="max-w-7xl mx-auto p-6 flex flex-col items-center w-full relative">
+    <div class="block lg:hidden text-white self-end mx-2">
+      {{ partial "nav-menu-buttons.html" . }}
+    </div>
+
+    <div id="nav-menu"
+      class="absolute lg:p-6 hidden lg:block self-end text-white rounded-md bg-black shadow lg:bg-transparent lg:shadow-none">
+      <nav>
+        {{ partial "nav-links.html" . }}
+      </nav>
+    </div>
+
+    <div class="flex-grow w-full flex flex-col justify-center items-center">
+      {{if .Site.Params.avatar}}
+      {{if or (eq (substr .Site.Params.avatar 0 7) "http://") (eq (substr .Site.Params.avatar 0 8) "https://")}}
+      <img alt="{{ .Site.Title }}" class="w-24 h-24 lg:w-32 lg:h-32 rounded-full mb-3" src="{{.Site.Params.avatar}}">
+      {{ else }}
+      <img alt="{{ .Site.Title }}" class="w-24 h-24 lg:w-32 lg:h-32 rounded-full mb-3" src="{{.Site.Params.avatar }}">
+      {{ end }}
+      {{ end }}
+      <a href="{{ .Site.Home.Permalink }}"
+        class="tracking-tighter text-4xl font-semibold flex flex-shrink-0 text-center px-3 bg-white focus:text-gray-300 opacity-75 hover:opacity-100 transition duration-300 ease-in-out">
+        {{ .Site.Title }}
+      </a>
+
+      <nav class="text-white">
+        {{ partial "nav-social-links.html" . }}
+      </nav>
+    </div>
+  </div>
+</header>

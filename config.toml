@@ -1,0 +1,62 @@
+baseurl = "https://tomwithers.dev/"
+languageCode = "en-us"
+title = "Tom Withers"
+theme = "custom"
+copyright = "© Tom Withers - 2016 - {year}"
+
+disableAliases = true
+
+[markup]
+	[markup.highlight]
+	codeFences = true
+	guessSyntax = true
+	style = "dracula"
+	noClasses = true
+	tabWidth = 2
+
+[related]
+	threshold = 80
+	includeNewer = true
+	toLower = true
+
+	[[related.indices]]
+		name = "keywords"
+		weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[permalinks]
+	post = "/posts/:slug"
+
+[privacy]
+	[privacy.twitter]
+		enableDNT = true
+	[privacy.youtube]
+		privacyEnhanced = true
+
+[params]
+	author = "Tom Withers"
+	authorBio = "Tom is a DevOps Engineer who enjoys working with AWS and the HashiStack."
+	description = "Thoughts, rants and discoveries on software development and related stuff."
+	keywords = "software development, software, golang, devops, go, sre, site reliability engineering, software engineering"
+	avatar = "avatar.jpg"
+	twitter = "tomtucka"
+	github = "tomtucka"
+	sponsors = "tomtucka"
+	linkedin = "https://www.linkedin.com/in/tomtucka/"
+
+[params.plausible]
+	domain = "tomtucka.dev"
+
+[menu]
+	[[menu.main]]
+		identifier = "home"
+		name = "Home"
+		url = "/"
+		weight = 10
+
+
+[outputs]
+home = [ "HTML", "RSS" ]

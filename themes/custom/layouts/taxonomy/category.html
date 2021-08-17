@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<article class="article">
+  <h1><a href="{{.Permalink}}" class="no-underline">Posts in the {{ .Title }} category</a></h1>
+
+  {{ range .Paginator.Pages }}
+  <div class="border-b border-gray-400">
+    <h2 class="text-3xl font-bold"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+
+    <p>{{ .Summary }}</p>
+  </div>
+  {{ end }}
+</article>
+
+{{ if gt .Paginator.TotalPages 1 }}
+{{ partial "pagination.html" . }}
+{{ end }}
+{{ end }}

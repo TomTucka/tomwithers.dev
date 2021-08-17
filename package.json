@@ -1,35 +1,27 @@
 {
-  "name": "notion-blog",
-  "version": "0.1.0",
+  "name": "tomwithers.dev",
+  "version": "0.0.1",
+  "description": "tomwithers.dev",
+  "repository": "https://tomwithers.dev",
+  "author": "Tom Withers",
+  "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "start": "next start",
-    "build": "next build && node .next/serverless/scripts/build-rss.js",
-    "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "dependencies": {
-    "@zeit/react-jsx-parser": "^2.0.0",
-    "async-sema": "^3.1.0",
-    "github-slugger": "^1.2.1",
-    "next": "9.4.4",
-    "prismjs": "^1.17.1",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-syntax-highlighter": "^12.2.1",
-    "react-youtube": "^7.9.0",
-    "uuid": "^8.1.0"
+    "dev": "hugo server --disableFastRender",
+    "build": "NODE_ENV=production hugo --verbose --gc --minify"
   },
   "devDependencies": {
-    "@types/node": "^13.1.2",
-    "@types/react": "^16.9.17",
-    "husky": "^3.1.0",
-    "lint-staged": "^9.5.0",
-    "prettier": "^1.19.1",
-    "typescript": "^3.7.4"
-  }
+    "@tailwindcss/typography": "^0.4.0",
+    "@tailwindcss/ui": "^0.7.2",
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.7"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
