@@ -13,3 +13,4 @@ tmp
 bin
 .env
 resources
+node_modules

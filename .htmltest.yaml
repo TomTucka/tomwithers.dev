@@ -1,6 +1,6 @@
 DirectoryPath: "site"
 IgnoreURLs:
-  - tomwithers.dev
+  - m.tomwithers.dev
   - amzn.to
 IgnoreDirs: []
 IgnoreDirectoryMissingTrailingSlash: true

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="{{ .Site.LanguageCode }}">
+{{- partial "head.html" . -}}
+
+<body class="bg-gradient flex flex-col min-h-screen">
+  {{- partial "header.html" . -}}
+  <main class="flex-1 max-w-3xl mt-32 mx-auto text-gray-700 w-full">
+    <article class="article">
+      <header class="text-center pt-10 pb-6">
+        <h1 class="leading-9 text-center">
+          <a href="{{.Permalink}}" class="no-underline inline-block text-black relative">
+            <div class="dots" aria-hidden="true"></div>
+            {{ .Title }}
+          </a>
+        </h1>
+      </header>
+
+      <div class="article__content">
+        <div class="flex flex-col md:flex-row border-b border-gray-400">
+          <h2 class="text-3xl font-bold mb-2 md:w-32 flex-shrink-0 flex-grow-0">Tags</h2>
+
+          <div class="mb-4 w-full">
+            <div class="mb-8 mt-8 flex flex-wrap">
+              {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
+              {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+              <a href="{{ .RelPermalink }}" title="All post with tag {{$name}} ({{$cnt}} posts)" class="inline-flex items-center px-4 py-1 rounded-full no-underline bg-orange-100 text-orange-800
+            hover:bg-orange-300 ml-1 mt-1">{{$name}}</a>
+              </a>
+              {{end}}
+              {{end}}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{ range site.RegularPages.GroupByDate "2006" -}}
+      {{ partial "post-summary.html" . }}
+      {{ end }}
+    </article>
+  </main>
+  {{- partial "footer.html" . -}}
+</body>
+
+</html>

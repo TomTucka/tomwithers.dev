@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<article class="article">
+  <header class="text-center pt-10 pb-6">
+    <small class="text-center text-sm">
+      Posts tagged with
+    </small>
+    <h1 class="leading-9 text-center">
+      <a href="{{.Permalink}}" class="no-underline inline-block text-black relative">
+        <div class="dots" aria-hidden="true"></div>
+        {{ .Title }}
+      </a>
+    </h1>
+  </header>
+
+  {{ range (.Paginate (.Data.Pages.GroupByDate "2006")).PageGroups -}}
+  {{ partial "post-summary.html" . }}
+  {{ end }}
+</article>
+
+{{ if gt .Paginator.TotalPages 1 }}
+{{ partial "pagination.html" . }}
+{{ end }}
+{{ end }}

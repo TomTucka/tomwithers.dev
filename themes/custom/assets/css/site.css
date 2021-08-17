@@ -1,0 +1,347 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.backdrop-filter-blur {
+  backdrop-filter: blur(5px);
+}
+
+
+.bg-gradient {
+  background-image: linear-gradient(to top, rgba(217, 219, 224, 0.7) 0, rgb(249, 250, 251) 500px);
+}
+
+.bg-twitter {
+  background-color: #4fafed;
+}
+
+/* Home page header - with triangle effect */
+.header {
+  position: relative;
+  min-height: 400px;
+  height: 50vh;
+}
+
+.header:before, .header:after {
+  box-sizing: border-box;
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 50%;
+  height: 20px;
+  border: 20px solid transparent;
+  border-bottom-color: #f9fafb;
+}
+
+.header:before {
+  left: 0;
+  border-right: 30px solid transparent;
+  border-left: 0;
+}
+
+.header:after {
+  right: 0;
+  border-left: 30px solid transparent;
+  border-right: 0;
+}
+
+/*
+ * These styles are needed since the markup is
+ * created dynamically from MD files
+ */
+
+.article {
+  @apply px-5;
+  @apply pb-5;
+}
+
+.article__content > figure > figcaption {
+  text-align: center;
+  margin-top: -1.7rem;
+  @apply text-gray-500;
+}
+
+.article__content > figure > figcaption > p {
+	font-size: .8rem;
+}
+
+/* Make images/videos wider than post width, like Medium */
+.article__content > p > img,
+.article__content > figure > img,
+.article__content > video,
+.article__content > .wide {
+  max-width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@screen lg {
+  .article__content > p > img,
+  .article__content > figure > img,
+  .article__content > video,
+  .article__content > .wide {
+    @apply max-w-4xl;
+  }
+}
+
+.article a {
+  @apply transition;
+  @apply duration-300;
+  @apply ease-in-out;
+}
+
+.article a:not(.no-underline) {
+  @apply underline;
+}
+
+.article a:not([class^="text-"]):hover,
+.article a:not([class^="text-"]):focus {
+  @apply text-blue-600;
+}
+
+.article h1 {
+  @apply text-4xl;
+  @apply font-semibold;
+  @apply tracking-tighter;
+  @apply text-gray-700;
+}
+
+.article h2 {
+  @apply text-3xl;
+  @apply font-semibold;
+  @apply text-gray-700;
+}
+
+.article h3 {
+  @apply text-2xl;
+  @apply text-gray-700;
+}
+
+.article h4 {
+  @apply text-xl;
+  @apply text-gray-700;
+}
+
+.article h5 {
+  @apply text-lg;
+  @apply text-gray-700;
+}
+
+.article h6 {
+  @apply text-base;
+  @apply font-semibold;
+  @apply uppercase;
+  @apply text-gray-700;
+}
+
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6,
+.article p,
+.article ul,
+.article ol,
+.article dl {
+  @apply my-6;
+  text-rendering: geometricPrecision;
+}
+
+/* Set the scroll-margin for internal anchor links, since we have a fixed top bar */
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+  @apply tracking-tighter;
+  scroll-margin-top: 8rem;
+}
+
+.article p,
+.article ul,
+.article ol,
+.article dl,
+.article td {
+  @apply text-lg;
+}
+
+.article ol:not(.list-none),
+.article ul:not(.list-none) {
+  @apply ml-1;
+  @apply list-outside;
+}
+
+.article ul:not(.list-none) {
+  @apply list-disc;
+}
+
+.article ol:not(.list-none) {
+  @apply list-decimal;
+}
+
+.article blockquote {
+  @apply pl-5;
+  @apply border-l-4;
+  @apply border-gray-600;
+}
+
+
+/* TODO: port to Tailwind CSS */
+
+.article blockquote p {
+  margin: 0.8em 0;
+  font-style: italic;
+}
+
+.article blockquote small {
+  display: inline-block;
+  margin: 0.8em 0 0.8em 1.5em;
+}
+
+.article blockquote small:before {
+  content: "\2014 \00A0";
+}
+
+.article blockquote cite {
+  @apply font-bold;
+}
+
+.article blockquote cite a {
+  @apply font-normal;
+}
+
+.article code, tt {
+  padding: 1px 3px;
+  @apply font-mono;
+  @apply text-lg;
+
+  white-space: pre-wrap;
+  border: #E3EDF3 1px solid;
+  background: #F7FAFB;
+  border-radius: 2px;
+}
+
+.article .full-width,
+.article .highlight {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.article .highlight {
+  background-color: #282a36;
+}
+
+.article pre {
+  @apply max-w-3xl;
+  @apply m-auto;
+  @apply my-2;
+  @apply px-5;
+  @apply py-4;
+  @apply font-mono;
+  @apply text-lg;
+  white-space: pre;
+  overflow: auto;
+  @apply bg-white;
+  @apply rounded;
+}
+
+.article pre code,
+.article pre tt {
+  font-size: inherit;
+  white-space: pre-wrap;
+  @apply bg-transparent;
+  @apply border-0;
+  @apply p-0;
+}
+
+.article kbd {
+  display: inline-block;
+  margin-bottom: 0.4em;
+  padding: 1px 8px;
+  border: #CCC 1px solid;
+  color: #666;
+  text-shadow: #FFF 0 1px 0;
+  font-size: 0.9em;
+  font-weight: 700;
+  background: #F4F4F4;
+  border-radius: 4px;
+  box-shadow:
+      0 1px 0 rgba(0, 0, 0, 0.2),
+      0 1px 0 0 #fff inset;
+}
+
+.article table {
+  @apply my-6;
+  @apply w-full;
+  @apply max-w-full;
+  @apply bg-transparent;
+}
+
+.article table th,
+.article table td {
+  @apply p-2;
+  @apply align-top;
+  border-top: #EFEFEF 1px solid;
+}
+
+.article table th {
+  @apply text-black;
+}
+
+.article table caption + thead tr:first-child th,
+.article table caption + thead tr:first-child td,
+.article table colgroup + thead tr:first-child th,
+.article table colgroup + thead tr:first-child td,
+.article table thead:first-child tr:first-child th,
+.article table thead:first-child tr:first-child td {
+  @apply border-t-0;
+}
+
+.article table tbody > tr:nth-child(odd) > td,
+.article table tbody > tr:nth-child(odd) > th {
+  @apply bg-gray-100;
+}
+
+.article table.plain tbody > tr:nth-child(odd) > td,
+.article table.plain tbody > tr:nth-child(odd) > th {
+  @apply bg-transparent;
+}
+
+.article iframe,
+.article .fluid-width-video-wrapper {
+  @apply block;
+  @apply my-6;
+}
+
+.dots {
+  background-color: transparent;
+  background-image: radial-gradient(#2C5282 1px, transparent 1px);
+  background-size: 20px 20px;
+  width: 140px;
+  height: 80px;
+  z-index: -1;
+  transform: translate(-70px, -50%);
+  position: absolute;
+  opacity: 0.3;
+}
+
+.intro p,
+.article__content > p:first-of-type {
+  @apply tracking-tight;
+  @apply text-xl;
+  @apply text-gray-800;
+}
+
+/* .pagination is created by Hugo */
+.pagination {
+  @apply my-5;
+  @apply py-5;
+}

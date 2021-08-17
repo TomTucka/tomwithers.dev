@@ -256,9 +256,9 @@ func renderPage(
 		case notion.BlockCode:
 			// hack: create an html block that starts with !!!EMBED!!! and it gets actually really embedded for realz in real life
 			if strings.HasPrefix(block.Code, "!!!EMBED!!!") {
-				converter.Printf("{{< rawhtml >}}\n")
+				converter.Printf("{{< rawhtml >}}\n<p>\n\t")
 				converter.Printf(strings.Replace(block.Code, "!!!EMBED!!!", "", 1) + "\n")
-				converter.Printf("{{< /rawhtml >}}\n")
+				converter.Printf("</p>\n{{< /rawhtml >}}\n")
 				return true
 			}
 			converter.Printf("```" + toLang(block.CodeLanguage) + "\n")
@@ -345,7 +345,7 @@ func toLang(s string) string {
 	).Replace(strings.ToLower(s))
 }
 
-var postURLRegex = regexp.MustCompile(`\(https://carlosbecker.com/posts/(.+?)/\)`)
+var postURLRegex = regexp.MustCompile(`\(https://tomwithers.dev/posts/(.+?)/\)`)
 
 func buildMarkdown(header string, content []byte) []byte {
 	var ss = strings.NewReplacer(
@@ -377,6 +377,9 @@ func pageHeader(title string) string {
 	return fmt.Sprintf(`---
 title: "%s"
 type: page
+hideMetadata: true
+hideAuthorBio: true
+hideSuggestions: true
 ---`, title)
 }
 
