@@ -21,7 +21,7 @@ ci: refresh
 	htmltest -c .htmltest.yaml ./public
 
 avatar:
-	wget -O static/avatar.jpg https://github.com/tomtucka.png
+	wget -O static/avatar.jpg https://avatars.githubusercontent.com/u/3950254?s=400&u=d5e10830f2de3166a9727047671ed7453b05e719&v=4
 	convert static/avatar.jpg \
 		-bordercolor white -border 0 \
 		\( -clone 0 -resize 16x16 \) \

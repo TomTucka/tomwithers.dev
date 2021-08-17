@@ -56,7 +56,11 @@ tag = "tags"
 		name = "Home"
 		url = "/"
 		weight = 10
-
+	[[menu.main]]
+		identifier = "about"
+		name = "About"
+		url = "/about/"
+		weight = 40
 
 [outputs]
 home = [ "HTML", "RSS" ]
