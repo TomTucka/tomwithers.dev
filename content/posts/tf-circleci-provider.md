@@ -5,7 +5,7 @@ draft: false
 slug: tf-circleci-provider
 city: Birmingham
 toc: true
-tags: []
+tags: [terraform, terraform-provider, ci-cd]
 ---
 
 This is a test blog post, pulled from notion.
