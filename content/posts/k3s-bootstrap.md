@@ -1,6 +1,6 @@
 ---
 title: "Using k3sup (said 'ketchup') to bootstrap k3s"
-date: 2021-08-19
+date: 2021-08-18
 draft: false
 slug: k3s-bootstrap
 city: Birmingham
