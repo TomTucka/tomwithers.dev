@@ -1,6 +1,6 @@
 ---
 title: "Hello World"
-date: 2021-08-18
+date: 2021-08-17
 draft: false
 slug: hello-world
 city: Birmingham

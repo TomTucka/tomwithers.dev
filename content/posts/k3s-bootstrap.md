@@ -5,7 +5,7 @@ draft: false
 slug: k3s-bootstrap
 city: Birmingham
 toc: true
-tags: [k3sup, k3s, raspberry-pi]
+tags: [k3sup, k3s, raspberry-pi, bare-metal]
 ---
 
 This is a short tutorial on how to set up a Kubernetes cluster on Raspberry Pis in < 2 minutes. I think this is one of the easiest ways to get up and running with Kubernetes.
