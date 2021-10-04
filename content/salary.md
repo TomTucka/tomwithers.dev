@@ -238,6 +238,10 @@ It's worth looking at my CV which you can find [here](https://tomwithers.dev/cv)
 			max-width: 1280px !important;
 		}
 
+		.max-w-3xl {
+		    max-width: 78rem;
+		}
+		
 		a,
 		a.visited {
 			color: inherit;
