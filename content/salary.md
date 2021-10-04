@@ -8,6 +8,8 @@ hideSuggestions: true
 
 ## My Salary History
 
-I wrote a blog post about this here, I've always wanted to do this and I was inspired by Jamie Tanna's tweet.
+I wrote a blog post about this [here]({{< ref "public-salary-history.md" >}}), I've always wanted to do this and I was inspired by [Jamie Tanna's tweet.](https://twitter.com/JamieTanna/status/1435908763119230978)
 
-[History](https://www.notion.so/cf2ed0ecc4474133a5cd2bc5d4308db5)
+RenderCallout NYI
+
+RendeRenderCollectionViewrCode NYI

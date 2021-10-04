@@ -1,5 +1,5 @@
 ---
-title: "Using k3sup (said 'ketchup') to bootstrap k3s"
+title: "Using k3sup to Bootstrap K3s"
 date: 2021-08-18
 draft: false
 slug: k3s-bootstrap
