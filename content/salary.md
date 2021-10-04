@@ -211,6 +211,8 @@ It's worth looking at my CV which you can find [here](https://tomwithers.dev/cv)
 			-webkit-print-color-adjust: exact;
 		}
 
+		
+
 		* {
 			box-sizing: border-box;
 			-webkit-print-color-adjust: exact;
@@ -233,6 +235,7 @@ It's worth looking at my CV which you can find [here](https://tomwithers.dev/cv)
 		body {
 			line-height: 1.5;
 			white-space: pre-wrap;
+			max-width: 1280px !important;
 		}
 
 		a,
