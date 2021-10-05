@@ -6,7 +6,7 @@ hideAuthorBio: true
 hideSuggestions: true
 ---
 
-I wrote a blog post about this [here](https://tomwithers.dev/posts/public-salary-history/), I've always wanted to do this and I was inspired by [Jamie Tanna's tweet.](https://twitter.com/JamieTanna/status/1435908763119230978) 
+I wrote a blog post about this [here](https://tomwithers.dev/posts/public-salary-history), I've always wanted to do this and I was inspired by [Jamie Tanna's tweet.](https://twitter.com/JamieTanna/status/1435908763119230978) 
 
 It might be worth checking out [my CV](https://docs.google.com/document/d/1sFaHZ-qbinmjFbeRsAxAJRwj8QSHgsPUYVwXDxm46KU/edit?usp=sharing) to see what skills and work were required in my roles.
 

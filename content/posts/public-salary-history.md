@@ -1,6 +1,6 @@
 ---
 title: "Public Salary History"
-date: 2021-10-07
+date: 2021-10-05
 draft: false
 slug: public-salary-history
 city: Birmingham
