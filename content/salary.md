@@ -1,16 +1,14 @@
 ---
-title: "Salary"
+title: "My Salary History"
 type: page
 hideMetadata: true
 hideAuthorBio: true
 hideSuggestions: true
 ---
 
-## My Salary History
+I wrote a blog post about this here, I've always wanted to do this and I was inspired by [Jamie Tanna's tweet.](https://twitter.com/JamieTanna/status/1435908763119230978) 
 
-I wrote a blog post about this here, I've always wanted to do this and I was inspired by [Jamie Tanna's tweet.](https://twitter.com/JamieTanna/status/1435908763119230978)
-
-It's worth looking at my CV which you can find [here](https://tomwithers.dev/cv).
+It might be worth checking out my CV to see what skills and work were required in my roles.
 
 {{< rawhtml >}}
 <p>
@@ -31,7 +29,7 @@ It's worth looking at my CV which you can find [here](https://tomwithers.dev/cv)
     </thead>
     <tbody>
         <tr id="ad347dd6-bf80-4522-8610-d5e8276d3180">
-            <td class="cell-Whr="><time>@August 18, 2021</time></td>
+            <td class="cell-Whr="><time>August 18, 2021</time></td>
             <td class="cell-title"><a href="https://www.notion.so/69000-00-ad347dd6bf8045228610d5e8276d3180">69000.00</a></td>
             <td class="cell-~v&gt;&lt;"><span class="selected-value select-value-color-purple">Updated Salary</span></td>
             <td class="cell-myG=">Ministry of Justice</td>
@@ -49,7 +47,7 @@ It's worth looking at my CV which you can find [here](https://tomwithers.dev/cv)
             <td class="cell-]YhY">Senior DevOps Engineer</td>
         </tr>
         <tr id="fe0942f1-5142-4f45-8d15-e55622960c8e">
-            <td class="cell-Whr="><time>@April 1, 2020</time></td>
+            <td class="cell-Whr="><time>April 1, 2020</time></td>
             <td class="cell-title"><a href="https://www.notion.so/60000-00-fe0942f151424f458d15e55622960c8e">60000.00</a></td>
             <td class="cell-~v&gt;&lt;"><span class="selected-value select-value-color-purple">Updated Salary</span></td>
             <td class="cell-myG=">Ministry of Justice</td>
@@ -76,7 +74,7 @@ It's worth looking at my CV which you can find [here](https://tomwithers.dev/cv)
             <td class="cell-]YhY">DevOps Engineer</td>
         </tr>
         <tr id="672866d3-0527-4275-b469-fd61ae9c2eb6">
-            <td class="cell-Whr="><time>@January 28, 2019</time></td>
+            <td class="cell-Whr="><time>January 28, 2019</time></td>
             <td class="cell-title"><a href="https://www.notion.so/49000-00-672866d305274275b469fd61ae9c2eb6">49000.00</a></td>
             <td class="cell-~v&gt;&lt;"><span class="selected-value select-value-color-purple">Updated Salary</span></td>
             <td class="cell-myG=">Ministry of Justice</td>
@@ -85,7 +83,7 @@ It's worth looking at my CV which you can find [here](https://tomwithers.dev/cv)
             <td class="cell-]YhY">Software Engineer</td>
         </tr>
         <tr id="7b1df8d1-0645-4c03-89e8-83b906c5b6ac">
-            <td class="cell-Whr="><time>@September 1, 2018</time></td>
+            <td class="cell-Whr="><time>September 1, 2018</time></td>
             <td class="cell-title"><a href="https://www.notion.so/33095-00-7b1df8d106454c0389e883b906c5b6ac">33095.00</a></td>
             <td class="cell-~v&gt;&lt;"><span class="selected-value select-value-color-purple">Updated Salary</span></td>
             <td class="cell-myG=">The Insolvency Service</td>
@@ -103,7 +101,7 @@ It's worth looking at my CV which you can find [here](https://tomwithers.dev/cv)
             <td class="cell-]YhY">Junior Software Engineer</td>
         </tr>
         <tr id="4ddb2c1b-3f14-458c-88c9-1fa4b47fdeb3">
-            <td class="cell-Whr="><time>@March 1, 2018</time></td>
+            <td class="cell-Whr="><time>March 1, 2018</time></td>
             <td class="cell-title"><a href="https://www.notion.so/25593-00-4ddb2c1b3f14458c88c91fa4b47fdeb3">25593.00</a></td>
             <td class="cell-~v&gt;&lt;"><span class="selected-value select-value-color-purple">Updated Salary</span></td>
             <td class="cell-myG=">The Insolvency Service</td>
@@ -121,7 +119,7 @@ It's worth looking at my CV which you can find [here](https://tomwithers.dev/cv)
             <td class="cell-]YhY">Junior Software Engineer</td>
         </tr>
         <tr id="820f2689-1911-40fb-a48e-d23d8fa3f44c">
-            <td class="cell-Whr="><time>@August 1, 2016</time></td>
+            <td class="cell-Whr="><time>August 1, 2016</time></td>
             <td class="cell-title"><a href="https://www.notion.so/23393-00-820f2689191140fba48ed23d8fa3f44c">23393.00</a></td>
             <td class="cell-~v&gt;&lt;"><span class="selected-value select-value-color-purple">Updated Salary</span></td>
             <td class="cell-myG=">The Insolvency Service</td>
@@ -130,7 +128,7 @@ It's worth looking at my CV which you can find [here](https://tomwithers.dev/cv)
             <td class="cell-]YhY">Junior Software Engineer</td>
         </tr>
         <tr id="cacc6875-d21e-4638-8e73-285b3770859a">
-            <td class="cell-Whr="><time>@December 1, 2015</time></td>
+            <td class="cell-Whr="><time>December 1, 2015</time></td>
             <td class="cell-title"><a href="https://www.notion.so/7200-00-cacc6875d21e46388e73285b3770859a">7200.00</a></td>
             <td class="cell-~v&gt;&lt;"><span class="selected-value select-value-color-purple">Updated Salary</span></td>
             <td class="cell-myG=">Sixth Story</td>
@@ -139,7 +137,7 @@ It's worth looking at my CV which you can find [here](https://tomwithers.dev/cv)
             <td class="cell-]YhY">Apprentice Web Developer</td>
         </tr>
         <tr id="69194247-300b-4aab-b33f-80720b7ca9df">
-            <td class="cell-Whr="><time>@August 1, 2015</time></td>
+            <td class="cell-Whr="><time>August 1, 2015</time></td>
             <td class="cell-title"><a href="https://www.notion.so/4200-00-69194247300b4aabb33f80720b7ca9df">4200.00</a></td>
             <td class="cell-~v&gt;&lt;"><span class="selected-value select-value-color-purple">Updated Salary</span></td>
             <td class="cell-myG=">Ice7Media</td>
