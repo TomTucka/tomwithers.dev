@@ -62,6 +62,10 @@ html {
   @apply text-gray-500;
 }
 
+.article__content-inner {
+  overflow-x: auto;
+}
+
 .article__content > figure > figcaption > p {
 	font-size: .8rem;
 }
@@ -281,8 +285,8 @@ html {
 .article table {
   @apply my-6;
   @apply w-full;
-  @apply max-w-full;
   @apply bg-transparent;
+  border-collapse: collapse;
 }
 
 .article table th,
