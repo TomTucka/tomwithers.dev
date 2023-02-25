@@ -11,5 +11,5 @@ require (
 	github.com/kjk/notionapi v0.0.0-20201107214737-0d0221669d7c
 	github.com/pkg/errors v0.9.1 // indirect
 	golang.org/x/sync v0.0.0-20201020160332-67f06af15bc9
-	golang.org/x/sys v0.0.0-20201119102817-f84b799fce68 // indirect
+	golang.org/x/sys v0.1.0 // indirect
 )
